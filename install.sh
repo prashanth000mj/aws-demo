@@ -7,3 +7,9 @@ sudo apt install nginx
 sudo ufw allow 'Nginx HTTP'
 echo " ----- NGINX is Up and running-----"
 echo "Commands to look at NGINX: systemctl status/stop/start nginx"
+
+echo " ---- Installing Maven and Java -----"
+apt-get update
+apt install software-properties-common -y
+apt-get install -y default-jdk maven unzip
+
