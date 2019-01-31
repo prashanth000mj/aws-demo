@@ -18,3 +18,8 @@ rm -f /etc/nginx/sites-available/default
 cp ./default /etc/nginx/sites-available/default
 sudo systemctl restart nginx
 
+
+echo " ---- Build Jar -----"
+cd myApp
+mvn clean install
+cd ..
