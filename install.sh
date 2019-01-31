@@ -19,7 +19,10 @@ cp ./default /etc/nginx/sites-available/default
 sudo systemctl restart nginx
 
 
-echo " ---- Build Jar -----"
+echo " ---- Building Jar/App -----"
 cd myApp
 mvn clean install
 cd ..
+echo " ---- Deploying Jar/App -----"
+cd target
+java -jar myproject-0.0.1-SNAPSHOT.jar
