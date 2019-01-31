@@ -8,7 +8,7 @@ public class Example {
 
 	@RequestMapping("/api/")
 	String home() {
-		return "Hello World!";
+		return "Hello From Spring boot Application!";
 	}
 
 	public static void main(String[] args) {
