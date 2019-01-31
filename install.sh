@@ -14,6 +14,7 @@ apt install software-properties-common -y
 apt-get install -y default-jdk maven unzip
 
 echo " ---- Setup Nginx -----"
-cp ./myApp /etc/nginx/sites-available/
-ln -s /etc/nginx/sites-available/myApp /etc/nginx/sites-enabled/myApp
+rm -f /etc/nginx/sites-available/default
+cp ./default /etc/nginx/sites-available/default
+sudo systemctl restart nginx
 
